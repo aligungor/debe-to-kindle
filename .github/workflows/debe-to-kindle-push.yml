@@ -26,14 +26,14 @@ jobs:
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com
-          server_port: 465
+          server_address: smtp-mail.outlook.com
+          server_port: 587
           username: ${{secrets.MAIL_NAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: debe - ${{env.DATE}}
           to: ${{secrets.KINDLE_MAIL}}
           from: ${{secrets.MAIL_NAME}}
           ignore_cert: true
-          secure: true
+          secure: false
           html_body: README.md
           attachments: Eksisozluk DEBE - ${{env.DATE}}.html
