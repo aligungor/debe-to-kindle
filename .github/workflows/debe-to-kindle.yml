@@ -2,7 +2,7 @@ name: debe-to-kindle
 
 on:
   schedule:
-    - cron: "1 5 * * *"
+    - cron: "1 8 * * *"
 
 env:
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
